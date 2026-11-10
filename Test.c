@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(void) 
 {   
+    // Input ist die Variable die für  die Benutzereingabe verwendet  wird
     char Input[200];
     int Anzahl_der_Es = 0;
     printf("Gib etwas ein: ");
@@ -11,10 +12,8 @@ int main(void)
         if (Input[i] == 'E' || Input[i] == 'e') {
             Input [i] = '3';
             Anzahl_der_Es++;
-            
         }
         printf("%c", Input[i]);
-    }
-
-    return 0;
+}
+return 0;
 }
